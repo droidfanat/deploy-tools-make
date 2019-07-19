@@ -1,0 +1,4 @@
+
+# valerka autocomplete
+VALERKA_DIR=/usr/local/etc/valerka
+complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' $VALERKA_DIR/Makefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" valerka
